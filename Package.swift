@@ -11,7 +11,7 @@ let package = Package(
             targets: ["SwiftyFactorial"]),
     ],
     dependencies: [
-         .package(url: "../clib",  from: "1.3.7")
+         .package(url: "../clib",  from: "1.3.8")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
