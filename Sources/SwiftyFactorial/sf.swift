@@ -9,7 +9,7 @@ public class SF {
         
     }
     
-    func getSFValue() -> Int32 {
+    public func getSFValue() -> Int32 {
         var onceC: UnsafeMutablePointer<OnceC>
         onceC = .allocate(capacity: 1)
         onceC.initialize(to:  OnceCCreate())
