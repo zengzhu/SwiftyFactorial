@@ -4,7 +4,11 @@ import Once
 
 
 public class SF {
+    
+    init() {
         
+    }
+    
     func getSFValue() -> Int32 {
         var onceC: UnsafeMutablePointer<OnceC>
         onceC = .allocate(capacity: 1)
