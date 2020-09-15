@@ -2,13 +2,22 @@
 import Foundation
 import Once
 
-var onceC: UnsafeMutablePointer<OnceC>
-onceC = .allocate(capacity: 1)
-onceC.initialize(to:  OnceCCreate())
 
-print(getOnce(5))
+public class SF {
+        
+    func getSFValue() -> Int32 {
+        var onceC: UnsafeMutablePointer<OnceC>
+        onceC = .allocate(capacity: 1)
+        onceC.initialize(to:  OnceCCreate())
 
-var handler: ONCE_HANDLER
-handler = createHanlder()
-assign(handler, 100)
-print(getValue(handler))
+        print(getOnce(5))
+
+        var handler: ONCE_HANDLER
+        handler = createHanlder()
+        assign(handler, 100)
+        let v = getValue(handler)
+        print(v)
+        return v
+    }
+}
+
