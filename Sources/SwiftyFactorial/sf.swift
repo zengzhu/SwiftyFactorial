@@ -5,7 +5,7 @@ import Once
 
 public class SF {
     
-    init() {
+    public init() {
         
     }
     
